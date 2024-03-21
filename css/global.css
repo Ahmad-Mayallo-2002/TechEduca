@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-color: #151564;
+    --secondary-color: #fff;
+}
+.dark {
+    --main-color: #fff;
+    --secondary-color: #212529;
+}
+.dark-nav {
+    background-color: #212529 !important;
+}
+body {
+    background-color: var(--secondary-color) !important;
+}
+.mode {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    width: 30px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+.padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+#title h2 {
+    color: var(--main-color);
+    font-size: 45px;
+    font-weight: 700;
+}
+@media (max-width: 575px) {
+    #title h2 {
+        font-size: 37px;
+    }
+}
+#title p {
+    font-size: 19px;
+    color: #777;
+}
+#hero {
+    color: #fff;
+    background-image: linear-gradient(#0905364d, #05042eb3), url(../images/back1.jpg);
+    background-size: cover;
+    height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+}
+#hero h1 {
+    font-weight: bold;
+}
+nav {
+    min-height: 82px;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px #00000026;
+}
+nav .container ul li a {
+    color: rgb(21 21 100);
+    transition: color 300ms;
+    font-weight: 500;
+    font-size: 20px;
+}
+nav .container ul li a:hover,
+nav .container ul li a.active {
+    color: #fdc93b !important;
+}
+#feature #grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+}
+#feature article i {
+    color: var(--main-color);
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+#feature article h3 {
+    color: var(--main-color);
+    font-weight: 700;
+}
+#feature article p {
+    color: #777;
+}
+#course #courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+#course #courses .card {
+    border: 1px solid #eee;
+    border-radius: 0;
+}
+.card-body {
+    background-color: var(--secondary-color) !important;
+    color: var(--main-color) !important;
+}
+#course #courses .card figure {
+    margin-bottom: 0;
+}
+#course #courses .card figure img {
+    width: 100%;
+    height: 240px;
+    user-select: none;
+    object-fit: cover;
+}
+#course #courses .card figure span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #151564;
+    color: #fff;
+    bottom: 0;
+    transform: translateY(50%);
+    right: 1rem;
+}
+#course #courses .card .card-body {
+    background-color: #fcfcff;
+}
+#course #courses .card .card-body .stars i {
+    color: #fdc93b;
+}
+#footer {
+    color: #fff;
+}
+#footer #contact {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+#footer #contact ul {
+    display: grid;
+    gap: 1rem;
+}
+#footer #contact ul li a {
+    display: block;
+    text-decoration: none;
+    color: #6c757d;
+    transition-duration: 500ms;
+    &:hover {
+        color: #fff;
+        margin-left: 20px;
+    }
+}
+#footer #contact .column input {
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    &::placeholder {
+        color: #fff;
+    }
+}
+#footer #contact .column button {
+    background-color: #fdc93b;
+    border: 1px solid #fdc93b;
+    padding: 10px 12.5px;
+    transition-duration: 500ms;
+    &:hover {
+        background-color: #fff;
+        border-color: #fff;
+        color: #fdc93b;
+    }
+}
+@media (max-width: 991px) {
+    #footer #contact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #footer #contact .column {
+        text-align: center;
+    }
+    #footer #contact .column form {
+        justify-content: center;
+    }
+    #footer .foot {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #footer .foot p {
+        text-align: center;
+        line-height: 2;
+    }
+}
+@media (max-width: 575px) {
+    #footer #contact {
+        grid-template-columns: 1fr;
+    }
+}

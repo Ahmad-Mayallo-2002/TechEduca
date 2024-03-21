@@ -1,0 +1,101 @@
+@import url(./global.css);
+
+#content .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+#content h2 {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+#content h2 {
+    font-size: 36px;
+}
+
+#content h3 {
+    color: rgb(21 21 100);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#content p {
+    color: #777;
+}
+
+#content p i {
+    color: var(--main-color);
+    width: 30px;
+    font-size: 20px;
+}
+
+#content .touch article:not(#content .touch article:first-of-type, 
+#content .touch article:last-of-type) {
+    margin: 2rem 0;
+}
+
+#content .touch article p {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#content .touch h4 {
+    color: var(--main-color);
+}
+
+#content .touch .follow h4 {
+    margin-bottom: 1rem;
+}
+
+#content .form {
+    padding: 2rem;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+}
+
+#content .form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#content .form form input,
+#content .form form textarea {
+    outline: none;
+    border: none;
+    padding: 15px;
+}
+
+#content .form form textarea {
+    resize: none;
+    height: 150px;
+}
+
+#content .form form [placeholder="Subject"],
+#content .form form textarea {
+    grid-column: 1 / -1;
+}
+
+#content .form button {
+    border: none;
+    background-color: rgb(21 21 100);
+    color: #fff;
+    padding: 10px 60px;
+    transition-duration: 300ms;
+}
+
+#content .form button:hover {
+    background-color: #fdc93b;
+}
+
+@media (max-width: 767px) {
+    #content .container {
+        grid-template-columns: 1fr;
+    }
+    #content .container .form form input {
+        grid-column: 1 / -1;
+    }
+}

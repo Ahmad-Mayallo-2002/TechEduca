@@ -1,0 +1,60 @@
+@import url(./global.css);
+#categories .container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
+}
+#categories .container figure img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+#categories .container figure figcaption h4 {
+    color: var(--main-color);
+}
+#categories .container figure figcaption a {
+    text-decoration: none;
+    background-color: rgb(21 21 100);
+    color: #fff;
+    border: 1px solid rgb(21 21 100);
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    display: block;
+    width: fit-content;
+    transition-duration: 500ms;
+    &:hover {
+        background-color: #fdc93b !important;
+        border-color: #fdc93b;
+    }
+}
+#categories .container article h3 {
+    border-bottom: 1px solid #aaa;
+}
+#categories .container article ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+#categories .container article ol li {
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+    padding: .5rem 0;
+}
+#categories .container article ol li:last-of-type {
+    border-bottom: none;
+}
+#categories .container article ol li a {
+    text-decoration: none;
+    color: #aaa;
+}
+@media (max-width: 991px) {
+    #categories .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    #categories .container {
+        grid-template-columns: 1fr;
+    }
+}

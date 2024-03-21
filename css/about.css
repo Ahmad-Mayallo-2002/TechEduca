@@ -1,0 +1,63 @@
+@import url(./global.css);
+#introduction .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+#introduction .container .main-image img {
+    max-width: 100%;
+}
+#introduction .container .main-content h2 {
+    color: var(--main-color);
+}
+#introduction .container .main-content h2,
+#introduction .container .main-content .box h4 {
+    font-weight: 700;
+}
+@media (min-width: 992px) {
+    #introduction .container .main-content {
+        padding-top: 70px;
+    }
+}
+#introduction .container .main-content p {
+    color: #aaa;
+}
+#introduction .container .main-content .box:first-of-type {
+    margin: 1.5rem 0;
+}
+#introduction .container .main-content .box img {
+    width: 70px;
+}
+@media (max-width: 767px) {
+    #introduction .container {
+        grid-template-columns: 1fr;
+    }
+    #introduction .container h2,
+    #introduction .container .main-content > p {
+        text-align: center;
+    }
+    #introduction .container .main-content .box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+#trusted .images {
+    display: grid;
+    place-items: center;
+    row-gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 767px) {
+    #trusted .images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    #trusted .images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+#trusted .images img {
+    width: 100px;
+    max-width: 100%;
+}

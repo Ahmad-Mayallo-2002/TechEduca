@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog</title>
+        <link rel="stylesheet" href="../css/blog.css">
+        <link rel="stylesheet" href="../css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script type="module" defer>
+          import { contact } from "../js/global.js";
+          contact();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="Logo" id="logo" width="150" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html" target="_blank">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html" target="_blank">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="blog.html" target="_blank">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="courses.html" target="_blank">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                  </li>
+                  <li class="nav-link">
+                      <button id="mode" class="mode">
+                        <i class="fa-solid fa-moon"></i>
+                      </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- Hero -->
+        <section id="hero">
+          <h1 class="mx-auto">Blog</h1>
+        </section>
+        <!-- Categories -->
+        <section id="categories" class="padding">
+          <div class="container">
+            <article>
+              <figure>
+                <img src="../images/b1.jpg" alt="image" />
+                <figcaption class="mt-3">
+                  <h4 class="fw-bold">Learn Web Development in The Easiest Way</h4>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero culpa est exercitationem necessitatibus voluptate sapiente iusto eos laborum, facere eveniet? Temporibus magni aspernatur, officia eaque dolorem voluptatem voluptates pariatur.</p>
+                  <a href="">Read More</a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="../images/b2.jpg" alt="image" />
+                <figcaption class="mt-3">
+                  <h4 class="fw-bold">Learn Web Development in The Easiest Way</h4>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero culpa est exercitationem necessitatibus voluptate sapiente iusto eos laborum, facere eveniet? Temporibus magni aspernatur, officia eaque dolorem voluptatem voluptates pariatur.</p>
+                  <a href="">Read More</a>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="../images/b3.jpg" alt="image" />
+                <figcaption class="mt-3">
+                  <h4 class="fw-bold">Learn Web Development in The Easiest Way</h4>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, vero culpa est exercitationem necessitatibus voluptate sapiente iusto eos laborum, facere eveniet? Temporibus magni aspernatur, officia eaque dolorem voluptatem voluptates pariatur.</p>
+                  <a href="">Read More</a>
+                </figcaption>
+              </figure>
+            </article>
+            <article>
+              <h3 class="fw-bold pb-2 mb-0">Categories</h3>
+              <ol class="mb-3">
+                <li><a href="">Web Development</a></li>
+                <li><a href="">Web Design</a></li>
+                <li><a href="">App Development</a></li>
+                <li><a href="">Frontend Web</a></li>
+                <li><a href="">Python Programming</a></li>
+                <li><a href="">JavaScript Hacks</a></li>
+              </ol>
+            </article>
+          </div>
+        </section>
+        <!-- Footer -->
+        <footer id="footer" class="pt-5 bg-dark">
+            <div class="container">
+              <article id="contact" class="mb-3">
+  
+              </article>
+              <footer class="foot d-flex justify-content-between align-items-center py-3">
+                <p class="mb-0">Copyright 2024&copy; All rights reserved | This Template is made by Ahmad Mayallo </p>
+                <div class="socials">
+                  <a href="" class="btn btn-outline-light"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="" class="btn btn-outline-light mx-2"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="" class="btn btn-outline-light"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </footer>
+            </div>
+        </footer>
+    </body>
+</html>
